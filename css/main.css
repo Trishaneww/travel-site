@@ -78,6 +78,12 @@
     color:white;
 }
 
+#travel-site {
+  font-size: 19px;
+  color:#335576;
+  font-weight: 700;
+}
+
 #hawaii {
     background-image: url(../assets/images/hawaii.jpg);
 }
