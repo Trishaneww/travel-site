@@ -2,47 +2,50 @@ body {
     font-family:'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
 
-  ul {
-    list-style: none;
-    display: flex;
-  }
-
-  li:hover a {
-    border-bottom: 3px solid #DB7A4E;
-  }
-
-  a {
-    padding: 10px 15px;
-    text-decoration: none;
-    color:black;
-  }
-
-  h1 {
+h1 {
     font-size: 80px;
     color:white;
     margin: 7% 0% -5% 7%;
-  }
+}
 
-  p {
+p {
     font-size: 20px;
-  }
+}
 
-  h3 {
+h3 {
     font-size: 20px;
     border-bottom: 3px solid black;
     width: 300px;
     text-align: center;
-  }
+}
+
+/* ------------------------------------------------------- navbar ----------------------------------------------------------*/
   
-  .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 10em 0.5em 10em;
-  }
+}
 
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li:hover a {
+    border-bottom: 3px solid #DB7A4E;
+}
+
+a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color:black;
+}
+
+/* ------------------------------------------------------- travel section ----------------------------------------------------------*/
 .travel-site {
     font-size: 19px;
     color:#335576;
@@ -88,6 +91,14 @@ body {
     margin: 2%;
     padding: 5px 15px 5px 15px;
     border-radius: 10px;
+}
+
+.card p {
+    background-color: #FEFAF5;
+    width: 80%;
+    height: 3em;
+    padding-top: 0.5em;
+    text-align: center;
 }
 
 /* ------------------------------------------------------- footer ----------------------------------------------------------*/
