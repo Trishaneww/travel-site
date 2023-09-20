@@ -19,6 +19,12 @@ body {
     color:black;
   }
 
+  h1 {
+    font-size: 80px;
+    color:white;
+    margin: 7% 0% -5% 7%;
+  }
+
   p {
     font-size: 20px;
   }
