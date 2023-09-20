@@ -20,8 +20,8 @@
   }
 
   button {
-    height: 30px;
-    width: 140px;
+    height: 40px;
+    width: 160px;
     border-radius: 50px;
     background-color: #DB7A4E;
     color: white;
@@ -38,8 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
-    padding-right: 110px;
+    padding: 0.5em 10em 0.5em 10em;
   }
 
   .hero {
@@ -47,10 +46,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
-    padding-top: 5em;
-    margin-left: 18%;
-}
+    padding: 10em 0em 10em 25em;
+    background-color: #FEFAF5;
+  }
 
 .hero img {
     width: 60%;
@@ -106,7 +104,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(254, 236, 239);
+    background-color: #FEFAF5;
 }
 
 footer p {
