@@ -172,7 +172,6 @@ footer div {
   
 }
 
-
 @media screen and (max-width: 414px) {
   footer {
       flex-direction: column;
@@ -187,4 +186,37 @@ footer div {
       padding: 5px 5px;
   }
 
+  .hero {
+    flex-direction:column-reverse;
+    justify-content: center;
+    padding: 3em 0em 10em 0em;
+    text-align: center;
+  }
+
+  .hero img {
+      width: 40%;
+
+  }
+
+  .travel {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0%;
+  }
+
+  .travel h1 {
+    font-size: 22px;
+  }
+
+  .travel p {
+    font-size: 12px;
+  }
+
+  .socials {
+    margin-top: 1.5%;
+  }
+  
+  .socials h2 {
+    margin-bottom: 10%;
+  }
 }
