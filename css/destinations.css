@@ -2,6 +2,7 @@ body {
     font-family:'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -45,12 +46,14 @@ a {
     color:black;
 }
 
-/* ------------------------------------------------------- travel section ----------------------------------------------------------*/
 .travel-site {
     font-size: 19px;
     color:#335576;
     font-weight: 700;
 }
+
+/* ------------------------------------------------------- travel section ----------------------------------------------------------*/
+
 
 #hawaii {
     background-image: url(/assets/images/hawaii.jpg);
@@ -77,6 +80,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 7%;
 }
 
@@ -108,6 +112,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     background-color: #FEFAF5;
+    flex-wrap: wrap;
 }
 
 footer p {
@@ -131,3 +136,57 @@ footer div {
     color:#DB7A4E;
     font-size: 12px;
 }
+
+.socials {
+    margin-top: 1.5%;
+  }
+  
+  .socials h2 {
+    margin-bottom: 23%;
+  }
+  
+  #facebook {
+    width: 12px;
+  }
+  
+/* ------------------------------------------------------- responsive ----------------------------------------------------------*/
+
+@media screen and (max-width: 1530px) {
+    .country {
+        text-align: center;
+        height: 1200px;
+    }
+    h1 {
+        margin: 10% 0 0 0;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    
+  }
+
+  @media screen and (max-width: 747px) {
+    .country {
+        height: 1600px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FEFAF5;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+
+
+
+    
+    
+  }
