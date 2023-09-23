@@ -31,6 +31,10 @@ h3 {
     padding: 0.5em 10em 0.5em 10em;
 }
 
+.gunderline, .hunderline, .iunderline {
+    border-bottom: 3px solid #DB7A4E;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -139,15 +143,15 @@ footer div {
 
 .socials {
     margin-top: 1.5%;
-  }
+}
   
-  .socials h2 {
-    margin-bottom: 23%;
-  }
+.socials h2 {
+    margin-bottom: 50px;
+}
   
-  #facebook {
+#facebook {
     width: 12px;
-  }
+}
   
 /* ------------------------------------------------------- responsive ----------------------------------------------------------*/
 
@@ -163,15 +167,36 @@ footer div {
         justify-content: center;
     }
     
-  }
+}
+  
+@media screen and (max-width: 935px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FEFAF5;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+    .socials {
+        margin-top: 1.5%;
+    }
+      
+    .socials h2 {
+        margin-bottom: 6%;
+    }
+      
+    #facebook {
+        width: 12px;
+    }
+}
 
-  @media screen and (max-width: 747px) {
+@media screen and (max-width: 747px) {
     .country {
         height: 1600px;
     }
   }
 
-  @media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
     footer {
         flex-direction: column;
         justify-content: center;
