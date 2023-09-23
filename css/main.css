@@ -1,26 +1,27 @@
-  body {
+body {
      font-family:'Open Sans', sans-serif;
      margin: 0;
      padding: 0;
      overflow-x: hidden;
-  }
+}
 
-  ul {
+ul {
     list-style: none;
     display: flex;
-  }
+}
 
-  li:hover a {
+li:hover a {
     border-bottom: 3px solid #DB7A4E;
-  }
+    transition: 200ms;
+}
 
-  a {
+a {
     padding: 10px 15px;
     text-decoration: none;
     color:black;
-  }
+}
 
-  button {
+button {
     height: 40px;
     width: 160px;
     border-radius: 50px;
@@ -29,18 +30,30 @@
     border:none;
     margin-top: 3%;
     font-size: 12px;
+    transition: 200ms;
 }
 
-  button:hover {
-    cursor: pointer;
- }
-  
+h2 {
+  color:#335576
+}
+
+button:hover {
+  background-color: white;
+  border: 3px solid #DB7A4E;
+  color:#DB7A4E;
+  cursor: pointer;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 10em 0.5em 10em;
-  }
+}
+
+.home {
+  border-bottom: 3px solid #DB7A4E;
+}
 
 .hero {
     display:flex;
@@ -82,8 +95,16 @@
     width: 300px;
     margin: 2%;
     padding: 5px 15px 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     color:white;
+    transition: 200ms;
+}
+
+.card:hover {
+  transform: scale(1.1,1.1);
+  border: none;
 }
 
 .travel-site {
