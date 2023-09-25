@@ -5,6 +5,7 @@
 Travel site is a platform where users can gain valuable insight into potential travelling options.
 
 ## Navigation
+
 - [Features](#features)
 - [Technologies](#technologies)
 - [Credits](#credits)
@@ -25,6 +26,7 @@ Travel site is a platform where users can gain valuable insight into potential t
 ## Credits
 
 ### Trishane Wijeyawickrema
+
 Link to Trishane's [GitHub Profile](https://github.com/Trishaneww)
 
 ## License
