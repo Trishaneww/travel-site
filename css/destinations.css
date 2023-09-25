@@ -23,37 +23,38 @@ h3 {
 }
 
 /* ------------------------------------------------------- navbar ----------------------------------------------------------*/
-  
-.navbar {
+
+.c-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 10em 0.5em 10em;
 }
 
-.gunderline, .hunderline, .iunderline {
-    border-bottom: 3px solid #DB7A4E;
-}
-
-ul {
+.c-nav__menu {
     list-style: none;
     display: flex;
 }
 
+.c-nav__underline {
+    border-bottom: 3px solid #DB7A4E;
+}
+
+.c-nav__logo {
+    font-size: 19px;
+    color:#335576;
+    font-weight: 700;
+}
+
 li:hover a {
     border-bottom: 3px solid #DB7A4E;
+    transition: 200ms;
 }
 
 a {
     padding: 10px 15px;
     text-decoration: none;
     color:black;
-}
-
-.travel-site {
-    font-size: 19px;
-    color:#335576;
-    font-weight: 700;
 }
 
 /* ------------------------------------------------------- travel section ----------------------------------------------------------*/
@@ -71,7 +72,7 @@ a {
     background-image: url(../assets/images/greece.jpg);
 }
 
-.country {
+.c-background {
     background-size:initial;
     background-repeat: no-repeat;
     padding: 5px 15px 5px 15px;
@@ -80,7 +81,7 @@ a {
     background-position: center; 
 } 
 
-.recommend {
+.c-gallery {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,7 +89,7 @@ a {
     margin-top: 7%;
 }
 
-.card {
+.c-gallery__card {
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -101,7 +102,7 @@ a {
     border-radius: 10px;
 }
 
-.card p {
+.c-gallery__card p {
     background-color: #FEFAF5;
     width: 80%;
     height: 3em;
@@ -111,110 +112,144 @@ a {
 
 /* ------------------------------------------------------- footer ----------------------------------------------------------*/
 
-footer {
+.c-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: #FEFAF5;
     flex-wrap: wrap;
-}
-
-footer p {
+  }
+  
+  .c-footer p {
     font-size: 19px;
-}
-
-footer img {
+    margin-right: 10px;
+  }
+  
+  .c-footer img {
     width: 20px;
-}
-
-footer div {
-   margin: 1em;
-}
-
-.info {
+  }
+  
+  .c-footer__groups {
+    margin: 1em;
+  }
+  
+  .info {
     display: inline-block;
     margin-top: 0px;
-}
-
-.info h4 {
+  }
+  
+  .info h4 {
     color:#DB7A4E;
     font-size: 12px;
-}
-
-.socials {
+  }
+  
+  .c-footer__socials {
     margin-top: 1.5%;
-}
+  }
   
-.socials h2 {
-    margin-bottom: 50px;
-}
+  .c-footer__socials h2 {
+    margin-bottom: 33%;
+  }
   
-#facebook {
+  #facebook {
     width: 12px;
-}
+  }
   
 /* ------------------------------------------------------- responsive ----------------------------------------------------------*/
 
 @media screen and (max-width: 1530px) {
-    .country {
+    .c-background {
         text-align: center;
         height: 1200px;
     }
     h1 {
         margin: 10% 0 0 0;
     }
-    .navbar {
+    .c-nav {
         justify-content: center;
     }
-    
 }
   
 @media screen and (max-width: 935px) {
-    footer {
-        flex-direction: column;
-        justify-content: center;
-        background-color: #FEFAF5;
-        flex-wrap: wrap;
-        padding-bottom: 100px;
-    }
-    .socials {
-        margin-top: 1.5%;
-    }
-      
-    .socials h2 {
-        margin-bottom: 6%;
-    }
-      
-    #facebook {
-        width: 12px;
+    .c-footer {
+        justify-content: left;
     }
 }
 
 @media screen and (max-width: 747px) {
-    .country {
+    .c-background {
         height: 1600px;
     }
-  }
+    #iceland__black {
+        color:black;
+    }
+}
 
 @media screen and (max-width: 414px) {
-    footer {
-        flex-direction: column;
-        justify-content: center;
-        background-color: #FEFAF5;
-        flex-wrap: wrap;
+    .c-nav a {
+      font-size: 14px;
+      padding: 5px 5px;
+    }
+  
+    .c-footer {
         padding-bottom: 100px;
     }
 
-    .navbar a {
-        font-size: 14px;
-        padding: 5px 5px;
-    }
-    .socials {
-        margin-top: 1.5%;
-      }
-      
-    .socials h2 {
-        margin-bottom: 10%;
+    .c-gallery__card {
+        height: 350px;
+        width: 200px;
+        margin: 2% 2% 10% 2%;
     }
 
-  }
+    h3 {
+        width: 180px;
+    }
+
+    .c-gallery__card p {
+        font-size: 14px;
+        width: 80%;
+    }
+  
+    .c-hero__info h1 {
+      font-size: 22px;
+    }
+  
+    .c-hero__info p {
+      font-size: 12px;
+    }
+  
+    .c-footer__socials {
+      margin-top: 1.5%;
+    }
+    
+    .c-footer__socials h2 {
+      margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .c-nav {
+        padding: 0.5em 8em 0.5em 8em;
+    }
+    .c-nav a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .c-background h1 {
+        font-size: 55px;
+    }
+
+    .c-gallery__card {
+        margin: 2% 2% 40% 2%;
+    }
+
+    .c-footer h4 {
+        font-size: 8px;
+    }
+
+    .c-footer p {
+        font-size: 12px;
+    }
+}
